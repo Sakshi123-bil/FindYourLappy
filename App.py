@@ -13,7 +13,7 @@ import speech_recognition as sr
 load_dotenv()  # Load environment variables
 
 # Add your OpenAI API key here
-openai_api_key = os.getenv("OPEN_AI_KEY")
+openai_api_key = os.getenv("")
 
 # Streamlit Setup
 custom_css = """
@@ -34,7 +34,7 @@ custom_css = """
     </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
-st.markdown("#Find Your Dream Laptop")
+st.markdown("Find Your Dream Laptop")
 
 # Database Setup
 singlestore_uri = 'mysql+mysqlconnector://admin:Sakshi123@svc-49a33054-45f9-4bdd-a096-9692d8679ff0-dml.aws-oregon-4.svc.singlestore.com:3306/TestData'
